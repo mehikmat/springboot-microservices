@@ -1,1 +1,0 @@
-Create Table employee_profile(id int(11) NOT NULL AUTO_INCREMENT,name varchar(255),address varchar(255),PRIMARY KEY (`id`));

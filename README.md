@@ -23,9 +23,31 @@ Spring Initializer can be used: https://start.spring.io/
 
 Spring Cloud provides solutions to cloud enable your microservices.
 It leverages and builds on top of some of the Cloud solutions open sourced by Netflix (Netflix OSS).
+
 Dynamic Scale Up and Down. Using a combination of
 * Naming Server (Eureka)
 * Ribbon (Client Side Load Balancing)
 * Feign (Easier REST Clients)
 
+Visibility and Monitoring with
+
+* Zipkin Distributed Tracing
+* Netflix API Gateway
+
+Configuration Management with
+
+* Spring Cloud Config Server
+
+Fault Tolerance with
+
+* Hystrix
+
+
+All instances of the components (CCS and FS) register with the Eureka Naming Server. When FS needs to call the CCS, it will ask Eureka Naming Server for the active instances. We will use Ribbon to do Client Side Load Balancing between the different instances of FS.
+
+A high level sequence diagram of what would happen when there is a request from CCS to FS is shown 
+
+![arch](Spring-Boot-Microservice-7-Eureka-Sequence-Diagram.png)
+
+Ref: https://www.springboottutorial.com/creating-microservices-with-spring-boot-part-1-getting-started
 
