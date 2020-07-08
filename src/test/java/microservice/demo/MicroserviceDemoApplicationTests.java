@@ -21,7 +21,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD)
 @AutoConfigureMockMvc
-public class SampleApplicationTests {
+public class MicroserviceDemoApplicationTests {
     @Autowired
     private MockMvc mockMvc;
 
@@ -41,7 +41,7 @@ public class SampleApplicationTests {
     @Test
     public void defaultHelloWithParamTest() throws Exception {
         mockMvc.perform(get("/defaultHello")
-                .param("message","False Message"))
+                .param("message", "False Message"))
                 .andDo(print())
                 .andExpect(jsonPath("$.echo").value("Default Hello World!"))
                 .andExpect(

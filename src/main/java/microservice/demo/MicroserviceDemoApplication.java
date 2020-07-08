@@ -1,13 +1,13 @@
-package hikmat.microservices;
+package microservice.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SampleApplication {
+public class MicroserviceDemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SampleApplication.class, args);
+        SpringApplication.run(MicroserviceDemoApplication.class, args);
     }
 
 }
