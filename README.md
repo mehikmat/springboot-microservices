@@ -1,7 +1,7 @@
 ## Tech stack
-- Java version: 1.8
+- Java version: 17
 - Maven version: 3.*
-- Spring Boot version: 2.3.1.RELEASE
+- Spring Boot version: 3.0.6
 
 
 ##What are microservices?
